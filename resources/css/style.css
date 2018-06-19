@@ -1,0 +1,148 @@
+/*Universal styles
+font-family: 'Roboto', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+html {
+font-size: 16px;
+font-family: 'Roboto', sans-serif;
+}
+
+#container {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  top: 4rem;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #333;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/*Header*/
+
+#header {
+  background-color: #fff;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  padding: 1rem 1.5rem;
+  height: 2rem;
+  display: flex;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 2rem;
+  color: #192761;
+  padding-right: 0.3rem;
+}
+
+.logotext {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #cfb344;
+}
+
+.logotext strong {
+  font-weight: 700;
+  padding: 0 0.3rem;
+  color: #192761;
+}
+
+nav {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+nav a {
+  font-family: 'Roboto', sans-serif;
+  padding: 0 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: #333;
+  transition: color 500ms ease;
+}
+
+nav a:hover {
+  color: #cfb344;
+}
+
+/*Banner*/
+
+.banner {
+  background-color: #EEE5BE;
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.banner img {
+  width:60%;
+  height: 60%;
+}
+
+.banner .text {
+  display: inline-flex;
+  flex-direction: column;
+  color: #333;
+  font-weight: 400;
+}
+
+.banner .text h5 {
+  font-size: 1.25rem;
+}
+
+.banner .text .spacing {
+  margin-top: 2rem;
+}
+
+button {
+  background-color: #333;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  width: 80%;
+  transition: background-color 750ms ease-in 0.2s;
+}
+
+button a {
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+button:hover {
+  background-color: #cfb344;
+}
+
+/*About*/
+
+/*Start Learning*/
+
+/*Thesis*/
+
+/*Footer*/
+
+/*Media Queries - mobile 480px*/
