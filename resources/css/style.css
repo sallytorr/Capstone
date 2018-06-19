@@ -21,10 +21,30 @@ h1 {
   color: #333;
 }
 
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #192761;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+h4{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  color: #333;
+}
+
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: 300;
+  color: #333;
+  line-height: 1.6;
 }
 
 /*Header*/
@@ -139,10 +159,30 @@ button:hover {
 
 /*About*/
 
-/*Start Learning*/
+/*Courses*/
 
 /*Thesis*/
 
 /*Footer*/
+footer {
+  background-color: #192761;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+}
+
+footer span {
+  font-size: 0.75rem;
+  color: #fff;
+  text-align: left;
+}
+
+footer a {
+  font-size: 0.75rem;
+  color: #fff;
+  text-decoration: none;
+  float: right;
+  padding-left: 1.5rem;
+}
+
+/*Media Queries - mobile 800px*/
 
 /*Media Queries - mobile 480px*/
