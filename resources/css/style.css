@@ -9,7 +9,6 @@ font-family: 'Roboto', sans-serif;
 }
 
 #container {
-  margin: 0 auto;
   width: 100%;
   position: relative;
   top: 4rem;
@@ -23,7 +22,7 @@ h1 {
 
 h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   color: #192761;
   line-height: 1.4;
   letter-spacing: 0.02em;
@@ -159,11 +158,82 @@ button:hover {
 
 /*About*/
 
+.about {
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+.about .left {
+  width: 60%;
+  padding-right: 1.5rem;
+}
+
+.about .left img {
+  width:100%;
+  padding-bottom: 2rem;
+}
+
+.about .left h2 {
+  padding-bottom: 1.5rem;
+}
+
+.about .left p {
+  padding-bottom: 0.5rem;
+}
+
+.about .left .author {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #192761;
+}
+
+.about .right .mobile {
+  display: none;
+}
+
+.about .right {
+  width: 40%;
+  position: relative;
+  top: -1rem;
+}
+
+.about .info {
+  background-color: #fff;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  transition: background-color 750ms ease-in 0.05s;
+}
+
+.about .info:hover {
+  background-color: #ccc;
+}
+
+.about .info img {
+  width: 35%;
+  height: 35%;
+  padding-right: 1rem;
+}
+
+.about .info .blue {
+  color: #192761;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.about .infotext {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /*Courses*/
 
 /*Thesis*/
 
 /*Footer*/
+
 footer {
   background-color: #192761;
   padding: 1rem 1.5rem 2rem 1.5rem;
