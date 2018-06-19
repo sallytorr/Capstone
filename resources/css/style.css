@@ -8,12 +8,6 @@ font-size: 16px;
 font-family: 'Roboto', sans-serif;
 }
 
-#container {
-  width: 100%;
-  position: relative;
-  top: 4rem;
-}
-
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
@@ -46,6 +40,12 @@ p {
   line-height: 1.6;
 }
 
+#container {
+  width: 100%;
+  position: relative;
+  top: 4rem;
+}
+
 /*Header*/
 
 #header {
@@ -56,6 +56,7 @@ p {
   padding: 1rem 1.5rem;
   height: 2rem;
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -86,9 +87,15 @@ p {
 }
 
 nav {
-  display: inline-flex;
-  align-items: center;
+  flex-grow: 1;
+  text-align: right;
   margin-right: 1.5rem;
+}
+
+nav span {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 nav a {
@@ -100,6 +107,7 @@ nav a {
   text-decoration: none;
   color: #333;
   transition: color 500ms ease;
+  align-items: center;
 }
 
 nav a:hover {
@@ -196,6 +204,7 @@ button:hover {
   position: relative;
   height: 100%;
   margin-left: 1.5rem;
+  float: left;
 }
 
 .about .info {
