@@ -11,9 +11,8 @@ font-family: 'Roboto', sans-serif;
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
-  color: #cfb344;
+  color: #333;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
 
 h2 {
@@ -88,6 +87,10 @@ p {
   color: #192761;
 }
 
+.mobilemenu {
+  display: none;
+}
+
 nav {
   flex-grow: 1;
   text-align: right;
@@ -119,7 +122,7 @@ nav a:hover {
 /*Banner*/
 
 .banner {
-  background-color: #192761;
+  background-color: #EEE5BE;
   padding: 2rem 1.5rem;
   display: flex;
   justify-content: center;
@@ -133,7 +136,7 @@ nav a:hover {
 .banner .text {
   display: inline-flex;
   flex-direction: column;
-  color: #fff;
+  color: #333;
   font-weight: 400;
 }
 
@@ -146,7 +149,7 @@ nav a:hover {
 }
 
 button {
-  background-color: #fff;
+  background-color: #333;
   padding: 0.5rem 0;
   border-radius: 0.5rem;
   width: 80%;
@@ -155,8 +158,9 @@ button {
 }
 
 button a {
-  color: #192761;
-  font-weight: 700;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.1rem;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
@@ -176,7 +180,6 @@ button:hover {
 }
 .about .left {
   width: 60%;
-
 }
 
 .about .left img {
@@ -204,7 +207,6 @@ button:hover {
 
 .about .right {
   width: 40%;
-  position: relative;
   height: 100%;
   margin-left: 1.5rem;
   float: left;
@@ -217,7 +219,7 @@ button:hover {
   justify-content: flex-start;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
-  transition: background-color 750ms ease-in 0.05s;
+  transition: background-color 750ms ease-in;
 }
 
 .about .info:hover {
@@ -344,7 +346,7 @@ button:hover {
   justify-content: flex-start;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
-  transition: background-color 750ms ease-in 0.05s;
+  transition: background-color 750ms ease-in;
 }
 
 .thesis .info:hover {
@@ -390,6 +392,146 @@ footer a:hover {
   color: #ccc;
 }
 
-/*Media Queries - mobile 800px*/
+/*Media Queries - mobile 780px*/
 
-/*Media Queries - mobile 480px*/
+@media only screen and (max-width: 780px) {
+
+  /*menu*/
+
+  .logo {
+    display: none;
+  }
+  nav span {
+    display: none;
+  }
+  .mobilemenu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .mobilemenu img {
+    height: 2rem;
+  }
+
+  /*banner*/
+  h1 {
+    font-size: 2.5rem;
+  }
+  .banner {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+  }
+  .banner img {
+    width:100%;
+    height: 20%;
+
+  }
+  .banner .text {
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 2rem 1rem;
+    width: 100%;
+  }
+  button {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    width: 90%;
+    justify-content: center;
+  }
+  button a {
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  /*about*/
+
+  .desktop {
+    display: none;
+  }
+.mobile img {
+    width: 90%;
+    height: auto;
+    display: block;
+  }
+
+  .about .right {
+  display: block;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+
+}
+  .about .info {
+  border: none;
+  display: block;
+  flex-wrap: wrap;
+  height: 100%;
+}
+  .about .left {
+    display: none;
+  }
+
+  /*courses*/
+
+  .courses{
+    padding: 0;
+  }
+  .courses h2 {
+    padding-bottom: 1rem;
+  }
+  .courses .item img {
+    display: none;
+  }
+  .courses .item p {
+    display: none;
+  }
+  .departments {
+    width: 100%;
+  }
+  .item {
+    width: 100%;
+    padding-top: 0.5rem;
+  }
+  .item h4 {
+    background-color: #192761;
+    color: #fff;
+    font-weight: 400;
+    padding: 1rem 1rem;
+    transition: background-color 500ms ease-in;
+  }
+  .item h4:hover {
+    background-color: #cfb344;
+  }
+
+  /*thesis*/
+
+  .thesis {
+    width: 100%;
+  }
+  .exhibit h2 {
+    margin-bottom: 1rem;
+  }
+  .thesis .left h4,p {
+    display: none;
+  }
+  .thesis video {
+    width: 100%;
+    padding-bottom: 1.5rem;
+  }
+  .thesis .right {
+    display: none;
+  }
+
+  /*footer*/
+
+  footer {
+    padding: 1rem 1rem;
+  }
+  footer .terms {
+    display: none;
+  }
+}
